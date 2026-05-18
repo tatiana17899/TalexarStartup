@@ -28,15 +28,34 @@
     });
   });
 
+window.addEventListener('load', function() {
+  if (window.botpress) {
+    window.botpress.init({
+      botId: "cf4a1767-a37f-4aad-8e82-fbc09fe9d72b",
+      configuration: {
+        botName: "Talexar",
+        botDescription: "Asistente virtual 24/7",
+        color: "#0d6dee",
+        themeMode: "light",
+      }
+    });
+  }
+});
+
 function abrirBot() {
   if (window.botpress) {
     try { window.botpress.open(); return; } catch(e) {}
   }
-  // Si aún no cargó, busca el botón flotante de Botpress
   const fab = document.querySelector('[class*="bpFab"], [class*="bp-widget"], [id*="bp-web-widget"]');
   if (fab) { fab.click(); return; }
-  // Último intento con delay
   setTimeout(function() {
     if (window.botpress) window.botpress.open();
   }, 1500);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('btnChat');
+  if (btn) {
+    btn.addEventListener('click', abrirBot);
+  }
+});
