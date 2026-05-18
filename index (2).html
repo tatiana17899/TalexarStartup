@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talexar – Automatización e IA para el crecimiento empresarial</title>
+  <meta name="description" content="Soluciones tecnológicas diseñadas para microempresas y emprendedores que buscan escalar sus operaciones y maximizar su potencial de ventas." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <div class="navbar__logo-icon">
+          <img src="logo.jpg" alt="Talexar Logo" style="width: 50px; height: 50px; object-fit: contain;" />
+        </div>
+        <span class="navbar__brand">Talexar</span>
+      </a>
+
+      <div class="navbar__links">
+        <a href="#servicios">Servicios</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="btn-contact">Contacto</a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menú">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="navbar__mobile" id="mobile-menu">
+    <a href="#servicios" onclick="closeMobile()">Servicios</a>
+    <a href="#beneficios" onclick="closeMobile()">Beneficios</a>
+    <a href="#nosotros" onclick="closeMobile()">Nosotros</a>
+    <a href="#contacto" class="btn-contact" onclick="closeMobile()">Contacto</a>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero__blob hero__blob--1"></div>
+  <div class="hero__blob hero__blob--2"></div>
+  <div class="hero__blob hero__blob--3"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Tu aliado en
+        <span class="hero__highlight-wrap">Automatización</span>
+        e IA para el
+        <span class="hero__gradient-text">crecimiento empresarial</span>
+      </h1>
+      <p class="hero__subtitle">
+        Soluciones tecnológicas diseñadas para microempresas y emprendedores que buscan escalar sus operaciones y maximizar su potencial de ventas.
+      </p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn-primary">
+          Comienza Ahora
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#servicios" class="btn-ghost">
+          Conocer Más
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__wave">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H0V0Z" fill="white"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════ STATS ══════════ -->
+<section class="stats">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Resultados que Transforman</h2>
+      <p class="section-sub">Impacto real y medible en tu negocio</p>
+    </div>
+
+    <div class="stats__grid">
+      <div class="stat-card-wrap">
+        <div class="stat-card">
+          <div class="stat-card__num-badge">1</div>
+          <div class="stat-card__value">100%</div>
+          <div class="stat-card__label">Automatización</div>
+          <p class="stat-card__desc">Procesos completamente automatizados</p>
+          <div class="stat-card__bar"></div>
+        </div>
+      </div>
+      <div class="stat-card-wrap">
+        <div class="stat-card">
+          <div class="stat-card__num-badge">2</div>
+          <div class="stat-card__value">24/7</div>
+          <div class="stat-card__label">Disponibilidad</div>
+          <p class="stat-card__desc">Atención ininterrumpida para tus clientes</p>
+          <div class="stat-card__bar"></div>
+        </div>
+      </div>
+      <div class="stat-card-wrap">
+        <div class="stat-card">
+          <div class="stat-card__num-badge">3</div>
+          <div class="stat-card__value">50%</div>
+          <div class="stat-card__label">Ahorro en Costos</div>
+          <p class="stat-card__desc">Reducción significativa de gastos operativos</p>
+          <div class="stat-card__bar"></div>
+        </div>
+      </div>
+      <div class="stat-card-wrap">
+        <div class="stat-card">
+          <div class="stat-card__num-badge">4</div>
+          <div class="stat-card__value">3x</div>
+          <div class="stat-card__label">Más Eficiencia</div>
+          <p class="stat-card__desc">Productividad triplicada en tus operaciones</p>
+          <div class="stat-card__bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats__cta">
+      <div class="stats__pill">
+        <div class="stats__dot"></div>
+        Únete a las empresas que ya están transformando su futuro
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section id="servicios" class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Nuestras Soluciones</h2>
+      <p class="section-sub">Tecnología de punta diseñada para impulsar el crecimiento de tu negocio</p>
+    </div>
+
+    <div class="services__grid">
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+        </div>
+        <h3 class="service-card__title">Agentes de IA</h3>
+        <p class="service-card__desc">Implementamos asistentes virtuales inteligentes que automatizan la atención al cliente y mejoran la experiencia de usuario.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3L12 7 8 3"/></svg>
+        </div>
+        <h3 class="service-card__title">Automatización de Procesos</h3>
+        <p class="service-card__desc">Optimizamos flujos de trabajo clave para aumentar la eficiencia operativa y reducir costos.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3 class="service-card__title">Análisis de Datos</h3>
+        <p class="service-card__desc">Transformamos datos en insights accionables para tomar decisiones estratégicas informadas.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        </div>
+        <h3 class="service-card__title">Atención al Cliente</h3>
+        <p class="service-card__desc">Soluciones que permiten ofrecer experiencias ágiles y personalizadas a tus clientes.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3 class="service-card__title">Gestión Comercial</h3>
+        <p class="service-card__desc">Herramientas digitales para maximizar tu potencial de ventas y escalar tu negocio.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="service-card__title">Reputación Digital</h3>
+        <p class="service-card__desc">Monitoreamos y mejoramos tu presencia en línea para fortalecer tu marca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BENEFITS ══════════ -->
+<section id="beneficios" class="benefits">
+  <div class="container">
+    <div class="benefits__grid">
+      <div>
+        <h2 class="benefits__title">¿Por qué elegir Talexar?</h2>
+        <p class="benefits__sub">En un entorno empresarial cada vez más dinámico, nos posicionamos como tu aliado estratégico para impulsar la innovación y fortalecer el crecimiento sostenible de tu negocio.</p>
+        <div class="benefits__list">
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Accesibles y adaptadas a microempresas</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Aumento de eficiencia operativa</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Experiencias personalizadas para clientes</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Escalabilidad real y sostenible</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Acompañamiento en transformación digital</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Mejora en toma de decisiones</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Posicionamiento competitivo</span>
+          </div>
+          <div class="benefit-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Resultados medibles y orientados a ROI</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="position:relative;">
+        <div class="focus-card">
+          <h3 class="focus-card__title">Nuestro Enfoque</h3>
+          <div class="focus-steps">
+            <div>
+              <div class="focus-step__label">01. Análisis</div>
+              <p class="focus-step__desc">Entendemos las necesidades reales de tu negocio</p>
+            </div>
+            <div>
+              <div class="focus-step__label">02. Implementación</div>
+              <p class="focus-step__desc">Desarrollamos soluciones adaptadas y escalables</p>
+            </div>
+            <div>
+              <div class="focus-step__label">03. Acompañamiento</div>
+              <p class="focus-step__desc">Te apoyamos en cada paso de la transformación</p>
+            </div>
+            <div>
+              <div class="focus-step__label">04. Optimización</div>
+              <p class="focus-step__desc">Mejoramos continuamente para maximizar resultados</p>
+            </div>
+          </div>
+        </div>
+        <div class="focus-card__accent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="nosotros" class="about">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Sobre Talexar</h2>
+      <p class="section-sub">Empresa especializada en el desarrollo e implementación de soluciones tecnológicas orientadas a la automatización inteligente de procesos empresariales.</p>
+    </div>
+
+    <div class="about__cards">
+      <div class="about-card">
+        <div class="about-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="about-card__title">Misión</h3>
+        <p class="about-card__desc">Transformar microempresas mediante tecnología accesible y efectiva</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+        </div>
+        <h3 class="about-card__title">Innovación</h3>
+        <p class="about-card__desc">Soluciones prácticas basadas en IA y automatización</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        </div>
+        <h3 class="about-card__title">Crecimiento</h3>
+        <p class="about-card__desc">Fundada en 2026 con visión de futuro</p>
+      </div>
+    </div>
+
+    <div class="about__banner">
+      <h3>Servicios y Consultoría de TI</h3>
+      <p>Nos caracterizamos por brindar soluciones accesibles, adaptadas a las necesidades reales de cada negocio, acompañando a nuestros clientes en su proceso de transformación digital con un enfoque práctico, escalable y orientado a resultados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Contáctanos</h2>
+      <p class="section-sub">Estamos listos para ayudarte a transformar tu negocio</p>
+    </div>
+
+    <div class="contact__grid">
+      <div>
+        <h3 class="contact__title">Hablemos de tu proyecto</h3>
+        <p class="contact__sub">Nuestro equipo está disponible para responder tus preguntas y diseñar una solución personalizada para tu negocio.</p>
+
+        <div class="contact-info">
+          <div class="contact-row">
+            <div class="contact-row__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-row__label">Chat en Vivo</div>
+              <div class="contact-row__val">Habla con nuestro asistente virtual disponible 24/7</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-row__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-row__label">Email</div>
+              <div class="contact-row__val">talexar2311@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-row__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-row__label">Horario</div>
+              <div class="contact-row__val">Lunes a Viernes: 9:00 AM - 6:00 PM</div>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-row__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-row__label">Ubicación</div>
+              <div class="contact-row__val">Servicios disponibles en toda América Latina</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <h3>¿Listo para comenzar?</h3>
+          <p>Conecta directamente con nuestro asistente virtual inteligente. Obtén respuestas inmediatas y cotizaciones personalizadas.</p>
+          <button class="btn-chat">Iniciar Conversación</button>
+          <p class="contact-cta__hint">Respuesta inmediata • Sin compromiso</p>
+        </div>
+
+        <div class="contact-list">
+          <h4>¿Qué podemos hacer por ti?</h4>
+          <ul>
+            <li>Cotizar un proyecto personalizado</li>
+            <li>Agendar una demostración</li>
+            <li>Resolver dudas técnicas</li>
+            <li>Asesoría en transformación digital</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Talexar</div>
+        <p class="footer__tagline">Automatización inteligente de procesos empresariales para microempresas y emprendedores.</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/company/talexar" target="_blank" class="footer__social" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Soluciones</h4>
+        <ul>
+          <li><span style="color:rgba(255,255,255,.65);font-size:.875rem;">Agentes de IA</span></li>
+          <li><span style="color:rgba(255,255,255,.65);font-size:.875rem;">Automatización</span></li>
+          <li><span style="color:rgba(255,255,255,.65);font-size:.875rem;">Análisis de Datos</span></li>
+          <li><span style="color:rgba(255,255,255,.65);font-size:.875rem;">Atención al Cliente</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Compañía</h4>
+        <ul>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Talexar. Todos los derechos reservados.</p>
+      <p>Servicios y Consultoría de TI</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
